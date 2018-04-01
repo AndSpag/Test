@@ -1,0 +1,31 @@
+﻿<Window x:Class="StudyAppAgency.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudyAppAgency"
+        mc:Ignorable="d"
+        Title="STUDY." Height="450" Width="800" Background="#FF2C3033" FontFamily="Arial Narrow" Icon="AppLogo.png">
+    <Menu HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="799" RenderTransformOrigin="-0.809,-0.314" Background="#FFDEDEDE" Margin="-3,0,-4,0">
+        <MenuItem Header="File" FontFamily="Arial Narrow" FontSize="16" Background="#FFDEDEDE">
+            <MenuItem Header="Exit" Click="MenuItem_Click"/>
+        </MenuItem>
+        <MenuItem Header="Help" FontFamily="Arial Narrow" FontSize="16" Background="#FFDEDEDE">
+            <MenuItem Header="About"/>
+        </MenuItem>
+        <MenuItem Header="Question Bank" FontFamily="Arial Narrow" FontSize="16" Background="#FFDEDEDE" Height="26">
+            <MenuItem Header="Flash Cards">
+                <MenuItem Header="View"/>
+                <MenuItem Header="Add"/>
+            </MenuItem>
+            <MenuItem Header="Multiple Choice">
+                <MenuItem Header="View"/>
+                <MenuItem Header="Add"/>
+            </MenuItem>
+            <MenuItem Header="Fill in">
+                <MenuItem Header="View" Click="MenuItem_Click_1"/>
+                <MenuItem Header="Add"/>
+            </MenuItem>
+        </MenuItem>
+    </Menu>
+</Window>
